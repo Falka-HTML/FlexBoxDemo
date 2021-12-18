@@ -14,11 +14,23 @@
         
         section {
             border: 2px solid black;
+            height: 200px;
+            display: flex;
+        }
+        
+        .section1 {
+            flex-wrap: wrap;
+        }
+        
+        .section2 {
+            flex-wrap: wrap-reverse;
         }
         
         div {
             border: 2px double silver;
             padding: 20px;
+            height: 30px;
+            width: 50px;
         }
         
         .div1 {
@@ -34,7 +46,7 @@
         }
         
         .div4 {
-            background: lightgreen;
+            background: lawngreen;
         }
         
         .div5 {
@@ -52,18 +64,113 @@
         .div8 {
             background: lightblue;
         }
+        
+        section {
+            border: 2px solid black;
+            height: 300px;
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
-    <div class="div1">1</div>
-    <div class="div2">2</div>
-    <div class="div3">3</div>
-    <div class="div4">4</div>
-    <div class="div5">5</div>
-    <div class="div6">6</div>
-    <div class="div7">7</div>
-    <div class="div8">8</div>
+    <h1>Multiline-flexbox</h1>
+    <hr>
+    <h4>flex-wrap: wrap</h4>
+    <section class="section1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+    </section>
+
+    <h4>flex-wrap: wrap-reverse</h4>
+    <section class="section2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+    </section>
+
+    <h4>align-content: scretch</h4>
+    <section style="flex-wrap: wrap; align-content: stretch;">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+    </section>
+
+    <h4>align-content: flex-start</h4>
+    <section style="flex-wrap: wrap; align-content: flex-start;">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+    </section>
+
+    <h4>align-content: flex-end</h4>
+    <section style="flex-wrap: wrap; align-content: flex-end;">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+    </section>
+
+    <h4>align-content: center</h4>
+    <section style="flex-wrap: wrap; align-content: center;">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+    </section>
+
+    <h4>align-content: space-around</h4>
+    <section style="flex-wrap: wrap; align-content: space-around;">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+    </section>
+
+    <h4>align-content: space-between</h4>
+    <section style="flex-wrap: wrap; align-content: space-between;">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+    </section>
 </body>
 
 </html>
