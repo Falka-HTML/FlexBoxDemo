@@ -13,9 +13,37 @@
             padding: 10px 10%;
         }
         
-        main {
-            border: 3px solid black;
+        section {
+            border: 2px solid black;
+        }
+        
+        .section1 {
             display: flex;
+        }
+        
+        .section2 {
+            display: inline-flex;
+        }
+        
+        .direction1 {
+            flex-direction: row;
+        }
+        
+        .direction2 {
+            flex-direction: row-reverse;
+        }
+        
+        .direction3 {
+            flex-direction: column;
+        }
+        
+        .direction4 {
+            flex-direction: column-reverse;
+        }
+        
+        .direction3 div,
+        .direction4 div {
+            width: 30px;
         }
         
         div {
@@ -38,6 +66,10 @@
         .div4 {
             background: lightgreen;
         }
+        
+        .fixed-height {
+            height: 200px;
+        }
     </style>
 
 </head>
@@ -46,10 +78,145 @@
     <h2>Flex containers</h2>
     <hr>
     <main>
-        <div class="div1">1</div>
-        <div class="div2">2</div>
-        <div class="div3">3</div>
-        <div class="div4">4</div>
+        <h4>display:flex</h4>
+        <section class="section1">
+
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </section>
+
+        <h4>display:inline-flex</h4>
+        <section class="section2">
+
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </section>
+
+        <h4>display:flex-direction: row</h4>
+        <section class="section1 direction1">
+
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </section>
+
+        <h4>display:flex-direction: row-reverse</h4>
+        <section class="section1 direction2">
+
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </section>
+
+        <h4>display:flex-direction: column</h4>
+        <section class="section1 direction3">
+
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </section>
+
+        <h4>display:flex-direction: column-reverse</h4>
+        <section class="section1 direction4">
+
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </section>
+
+        <h4>fustify-content: flex-start</h4>
+        <section class="section1" style="justify-content: flex-start;">
+
+            <div class=" div1 ">1</div>
+            <div class="div2 ">2</div>
+            <div class="div3 ">3</div>
+            <div class="div4 ">4</div>
+        </section>
+
+        <h4>fustify-content: flex-ende</h4>
+        <section class="section1" style="justify-content: flex-end;">
+
+            <div class=" div1 ">1</div>
+            <div class="div2 ">2</div>
+            <div class="div3 ">3</div>
+            <div class="div4 ">4</div>
+        </section>
+
+        <h4>fustify-content: center</h4>
+        <section class="section1" style="justify-content: center;">
+
+            <div class=" div1 ">1</div>
+            <div class="div2 ">2</div>
+            <div class="div3 ">3</div>
+            <div class="div4 ">4</div>
+        </section>
+
+        <h4>fustify-content: space-around</h4>
+        <section class="section1" style="justify-content: space-around;">
+
+            <div class=" div1 ">1</div>
+            <div class="div2 ">2</div>
+            <div class="div3 ">3</div>
+            <div class="div4 ">4</div>
+        </section>
+
+        <h4>fustify-content: space-evenly</h4>
+        <section class="section1" style="justify-content: space-evenly;">
+
+            <div class=" div1 ">1</div>
+            <div class="div2 ">2</div>
+            <div class="div3 ">3</div>
+            <div class="div4 ">4</div>
+        </section>
+
+        <h4>align-items: flex-start</h4>
+        <section class="section1" style="align-items: flex-start;">
+
+            <div class="div1 ">1</div>
+            <div class="div2 ">2</div>
+            <div class="div3 ">3</div>
+            <div class="div4 ">4</div>
+        </section>
+
+        <h4>align-items: flex-start</h4>
+        <section class="section1 fixed-height" style="align-items: flex-start; justify-content: center;">
+            <div class="div1 ">1</div>
+            <div class="div2 ">2</div>
+            <div class="div3 ">3</div>
+            <div class="div4 ">4</div>
+        </section>
+
+        <h4>align-items: flex-start</h4>
+        <section class="section1 fixed-height" style="align-items: flex-end; justify-content: center;">
+            <div class="div1 ">1</div>
+            <div class="div2 ">2</div>
+            <div class="div3 ">3</div>
+            <div class="div4 ">4</div>
+        </section>
+
+        <h4>align-items: center justify-content: center</h4>
+        <section class="section1 fixed-height" style="align-items: center; justify-content: center;">
+            <div class="div1 ">1</div>
+            <div class="div2 ">2</div>
+            <div class="div3 ">3</div>
+            <div class="div4 ">4</div>
+        </section>
+
+        <h4>align-items: scretch</h4>
+        <section class="section1 fixed-height" style="align-items: stretch; justify-content: center;">
+            <div class="div1 ">1</div>
+            <div class="div2 ">2</div>
+            <div class="div3 ">3</div>
+            <div class="div4 ">4</div>
+        </section>
     </main>
 </body>
 
