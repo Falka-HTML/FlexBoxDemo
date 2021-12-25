@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Align-self demo</title>
+    <style>
+        #flex-box{
+            display: flex;
+            color:navy;
+            height: 400px;
+        }
+        .column{
+            flex: 1 1;
+            background-color: orange;
+            padding: 10px 25px;
+            border: 1px solid blue;
+        }
+        p{
+            font: 12pt sans-serif;
+        }
+        .column:nth-child(1){
+            align-self: flex-start;
+        }
+        .column:nth-child(2){
+            align-self: flex-end;
+            background-color: yellow;
+        } 
+        .column:nth-child(3){
+            align-self: center;
+            background-color: limegreen;
+        } 
+        .column:nth-child(4){
+            align-self: stretch;
+            background-color: lightcoral;
+        } 
+        .column:nth-child(5){
+            align-self: baseline;
+            background-color: skyblue;
+        }   
+    </style>
+</head>
+<body>
+    <h2>Align-self Demo</h2>
+    <hr>
+    <main>
+        <div id="flex-box" class="row">
+            <div class="column">
+                <h3>Column-1</h3>
+                <p>flex-start</p>
+            </div>
+            <div class="column">
+                <h3>Column-2</h3>
+                <p>flex-end</p>
+            </div>
+            <div class="column">
+                <h3>Column-3</h3>
+                <p>center</p>
+            </div>
+            <div class="column">
+                <h3>Column-4</h3>
+                <p>scretch<p>
+            </div>
+            <div class="column">
+                <h3>Column-5</h3>
+                <p>baseline</p>
+            </div>
+        </div>
+    </main>
+    <a href="index.html">To the start page</a>
+    <hr>
+</body>
+</html>
