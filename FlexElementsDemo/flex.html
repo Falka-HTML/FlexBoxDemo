@@ -3,56 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=s, initial-scale=1.0">
-    <title>Flex shrink</title>
-    <style>
-        #flex-box{
-            display: flex;
-            color:navy;
-        }
-        .column{
-            flex-basis: 100px;
-            flex-grow: 1;
-            flex-shrink: 1;
-            background-color: orange;
-            padding: 10px 25px;
-            border: 1px solid blue;
-        }
-        p{
-            font: 12pt sans-serif;
-        }
-        .column:nth-child(2){
-            background-color: yellow;
-        } 
-        .column:nth-child(3){
-            background-color: limegreen;
-        } 
-        .column:nth-child(4){
-            background-color: lightcoral;
-        } 
-    </style>
+    <title>Flex-union Demo</title>
+    
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h2>Flex-Shrink Demo</h2>
     <hr>
     <main>
-        <div id="flex-box" class="row">
-            <div class="column">
-                <h3>Column-1</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur consequatur, illum, eos labore cumque debitis minima sint, laborum dolor corrupti rem repellendus quaerat impedit voluptatibus accusamus tenetur sunt vel.</p>
-            </div>
-            <div class="column">
-                <h3>Column-2</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur consequatur, illum, eos labore cumque debitis minima sint, laborum dolor corrupti rem repellendus quaerat impedit voluptatibus accusamus tenetur sunt vel.</p>
-            </div>
-            <div class="column">
-                <h3>Column-3</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur consequatur, illum, eos labore cumque debitis minima sint, laborum dolor corrupti rem repellendus quaerat impedit voluptatibus accusamus tenetur sunt vel.</p>
-            </div>
-            <div class="column">
-                <h3>Column-4</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur consequatur, illum, eos labore cumque debitis minima sint, laborum dolor corrupti rem repellendus quaerat impedit voluptatibus accusamus tenetur sunt vel.</p>
-            </div>
-        </div>
+       <ul>
+           <li>[flex:2]=>(flex-grow: 2;)</li>
+           <li>[flex:250px;]=>(flex-basis: 250px;)</li>
+           <li>[flex:2 250px;]=>(flex-grow: 2; flex-basis: 250px;)</li>
+           <li>[flex:1 2]=>(flex-grow: 1; flex-shrink:2;)</li>
+           <li>[flex:1 2 45%]=>(flex-grow: 1; flex-shrink: 2; flex-basis: 45%;)</li>
+       </ul>
     </main>
     <a href="index.html">To the start page</a>
     <hr>
