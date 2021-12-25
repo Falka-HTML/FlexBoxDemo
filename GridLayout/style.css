@@ -1,0 +1,29 @@
+.grid-container{
+    display: grid;
+    border: 1px solid blue;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.grid-container > div{
+    margin: 10px 0px;
+    padding: 0.3em;
+    border-radius: 5px;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.item1{
+background-color: lightgreen;
+}
+
+.item2{
+    background-color: lightpink;
+}
+    
+.item3{
+    background-color: lightskyblue;
+}
