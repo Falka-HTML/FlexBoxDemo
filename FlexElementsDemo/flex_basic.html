@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Basic Demo</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #flex-box{
+            display: flex;
+            color:navy;
+        }
+        .column{
+            flex-basis: 25%;
+            background-color: orange;
+            padding: 10px 25px;
+            border: 1px solid blue;
+        }
+        p{
+            font: 12pt sans-serif;
+        }
+        .column:nth-child(2){
+            background-color: yellow;
+            flex-basis: 20%;
+        } 
+        .column:nth-child(3){
+            background-color: limegreen;
+            flex-basis: 1;
+        } 
+        .column:nth-child(4){
+            background-color: lightcoral;
+            flex-basis: 20%;
+        } 
+    </style>
+</head>
+<body>
+    <h2>Flex-Basic Demo</h2>
+    <hr>
+    <main>
+        <div id="flex-box" class="row">
+            <div class="column">
+                <h3>Column-1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur consequatur, illum, eos labore cumque debitis minima sint, laborum dolor corrupti rem repellendus quaerat impedit voluptatibus accusamus tenetur sunt vel.</p>
+            </div>
+            <div class="column">
+                <h3>Column-2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur consequatur, illum, eos labore cumque debitis minima sint, laborum dolor corrupti rem repellendus quaerat impedit voluptatibus accusamus tenetur sunt vel.</p>
+            </div>
+            <div class="column">
+                <h3>Column-3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur consequatur, illum, eos labore cumque debitis minima sint, laborum dolor corrupti rem repellendus quaerat impedit voluptatibus accusamus tenetur sunt vel.</p>
+            </div>
+            <div class="column">
+                <h3>Column-4</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur consequatur, illum, eos labore cumque debitis minima sint, laborum dolor corrupti rem repellendus quaerat impedit voluptatibus accusamus tenetur sunt vel.</p>
+            </div>
+        </div>
+    </main>
+    <a href="index.html">To the start page</a>
+    <hr>
+</body>
+</html>
